@@ -43,7 +43,7 @@ if st.button("🚀 開始批改", type="primary"):
         with st.spinner("AI 閱卷員正在認真批改中，請稍候..."):
             try:
                 # 設定 Gemini 模型 (使用 Flash 模型速度快且支援視覺，或可改用 pro)
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                model = genai.GenerativeModel('gemini-1.5-flash-latest')
                 
                 # 組合 Prompt
                 prompt = f"""
